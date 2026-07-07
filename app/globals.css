@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  /* Palette oro/nero — modificare qui per cambiare tema */
+  --bg-primary: #0d0d0d;
+  --bg-card: #1a1a1a;
+  --bg-card-hover: #242424;
+  --border: #333333;
+
+  --gold: #d4af37;
+  --gold-bright: #f2c94c;
+  --gold-muted: #a98b2f;
+
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+
+  --slot-full: #4caf50;
+  --slot-empty: #555555;
+}
+
+@theme inline {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+  --color-border-base: var(--border);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-gold-muted: var(--gold-muted);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-slot-full: var(--slot-full);
+  --color-slot-empty: var(--slot-empty);
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}

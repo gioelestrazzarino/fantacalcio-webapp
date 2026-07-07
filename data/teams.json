@@ -1,0 +1,290 @@
+[
+  {
+    "id": "a-1",
+    "group": "A",
+    "slot_number": 1,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "a-2",
+    "group": "A",
+    "slot_number": 2,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "a-3",
+    "group": "A",
+    "slot_number": 3,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "a-4",
+    "group": "A",
+    "slot_number": 4,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "a-5",
+    "group": "A",
+    "slot_number": 5,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "a-6",
+    "group": "A",
+    "slot_number": 6,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "a-7",
+    "group": "A",
+    "slot_number": 7,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "a-8",
+    "group": "A",
+    "slot_number": 8,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "b-1",
+    "group": "B",
+    "slot_number": 1,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "b-2",
+    "group": "B",
+    "slot_number": 2,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "b-3",
+    "group": "B",
+    "slot_number": 3,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "b-4",
+    "group": "B",
+    "slot_number": 4,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "b-5",
+    "group": "B",
+    "slot_number": 5,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "b-6",
+    "group": "B",
+    "slot_number": 6,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "b-7",
+    "group": "B",
+    "slot_number": 7,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "b-8",
+    "group": "B",
+    "slot_number": 8,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "c-1",
+    "group": "C",
+    "slot_number": 1,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "c-2",
+    "group": "C",
+    "slot_number": 2,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "c-3",
+    "group": "C",
+    "slot_number": 3,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "c-4",
+    "group": "C",
+    "slot_number": 4,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "c-5",
+    "group": "C",
+    "slot_number": 5,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "c-6",
+    "group": "C",
+    "slot_number": 6,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "c-7",
+    "group": "C",
+    "slot_number": 7,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "c-8",
+    "group": "C",
+    "slot_number": 8,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "d-1",
+    "group": "D",
+    "slot_number": 1,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "d-2",
+    "group": "D",
+    "slot_number": 2,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "d-3",
+    "group": "D",
+    "slot_number": 3,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "d-4",
+    "group": "D",
+    "slot_number": 4,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "d-5",
+    "group": "D",
+    "slot_number": 5,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "d-6",
+    "group": "D",
+    "slot_number": 6,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "d-7",
+    "group": "D",
+    "slot_number": 7,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  },
+  {
+    "id": "d-8",
+    "group": "D",
+    "slot_number": 8,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "last_year_result": ""
+  }
+]
