@@ -3,10 +3,10 @@
     "id": "a-1",
     "group": "A",
     "slot_number": 1,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": ""
+    "team_name": "Squadra di Prova",
+    "member_one": "Test Uno",
+    "member_two": "Test Due",
+    "last_year_result": "1st"
   },
   {
     "id": "a-2",
