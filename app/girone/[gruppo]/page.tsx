@@ -65,6 +65,9 @@ export default async function GironePage({
                   </p>
                 </div>
                 <span className="shrink-0 rounded-md border border-border-base px-2 py-0.5 text-xs font-semibold text-gold-muted">
+                  <span className="font-normal text-text-secondary">
+                    Scorsa stagione:{" "}
+                  </span>
                   {display(team.last_year_result)}
                 </span>
               </div>
