@@ -9,6 +9,39 @@ function display(value: string): string {
   return value.trim() === "" ? "-" : value;
 }
 
+function MemberCell({
+  label,
+  name,
+  paid,
+}: {
+  label: string;
+  name: string;
+  paid: boolean;
+}) {
+  const hasName = name.trim() !== "";
+  return (
+    <div className="min-w-0">
+      <p className="text-xs uppercase tracking-wide text-text-secondary">
+        {label}
+      </p>
+      <p className="break-words font-medium">{display(name)}</p>
+      {hasName && (
+        <p className="mt-0.5 flex items-center gap-1.5 text-xs">
+          <span
+            className={`h-2 w-2 shrink-0 rounded-full ${
+              paid ? "bg-slot-full" : "bg-red-500"
+            }`}
+            aria-hidden
+          />
+          <span className={paid ? "text-slot-full" : "text-red-400"}>
+            {paid ? "Pagato" : "Da pagare"}
+          </span>
+        </p>
+      )}
+    </div>
+  );
+}
+
 export default async function GironePage({
   params,
 }: {
@@ -43,6 +76,17 @@ export default async function GironePage({
       </div>
       <p className="-mt-3 text-sm text-text-secondary">{AUCTION_INFO[group]}</p>
 
+      <div className="flex items-center gap-4 rounded-xl border border-border-base bg-bg-card px-4 py-2 text-xs text-text-secondary">
+        <span className="flex items-center gap-1.5">
+          <span className="h-2.5 w-2.5 rounded-full bg-slot-full" aria-hidden />
+          Pagato
+        </span>
+        <span className="flex items-center gap-1.5">
+          <span className="h-2.5 w-2.5 rounded-full bg-red-500" aria-hidden />
+          Da pagare
+        </span>
+      </div>
+
       <ul className="flex flex-col gap-3">
         {teams.map((team) => {
           const filled =
@@ -72,22 +116,16 @@ export default async function GironePage({
                 </span>
               </div>
               <div className="mt-3 grid grid-cols-2 gap-x-3 gap-y-1 text-sm">
-                <div className="min-w-0">
-                  <p className="text-xs uppercase tracking-wide text-text-secondary">
-                    Membro 1
-                  </p>
-                  <p className="break-words font-medium">
-                    {display(team.member_one)}
-                  </p>
-                </div>
-                <div className="min-w-0">
-                  <p className="text-xs uppercase tracking-wide text-text-secondary">
-                    Membro 2
-                  </p>
-                  <p className="break-words font-medium">
-                    {display(team.member_two)}
-                  </p>
-                </div>
+                <MemberCell
+                  label="Membro 1"
+                  name={team.member_one}
+                  paid={team.member_one_paid}
+                />
+                <MemberCell
+                  label="Membro 2"
+                  name={team.member_two}
+                  paid={team.member_two_paid}
+                />
               </div>
             </li>
           );

@@ -16,6 +16,8 @@ interface UpdatePayload {
   team_name: string;
   member_one: string;
   member_two: string;
+  member_one_paid: boolean;
+  member_two_paid: boolean;
   last_year_result: string;
 }
 
@@ -24,12 +26,16 @@ function parsePayload(body: unknown): UpdatePayload | null {
   const b = body as Record<string, unknown>;
   const fields = ["id", "team_name", "member_one", "member_two", "last_year_result"] as const;
   if (!fields.every((f) => typeof b[f] === "string")) return null;
+  const boolFields = ["member_one_paid", "member_two_paid"] as const;
+  if (!boolFields.every((f) => typeof b[f] === "boolean")) return null;
 
   const payload: UpdatePayload = {
     id: (b.id as string).trim(),
     team_name: (b.team_name as string).trim().slice(0, MAX_LENGTH),
     member_one: (b.member_one as string).trim().slice(0, MAX_LENGTH),
     member_two: (b.member_two as string).trim().slice(0, MAX_LENGTH),
+    member_one_paid: b.member_one_paid as boolean,
+    member_two_paid: b.member_two_paid as boolean,
     last_year_result: (b.last_year_result as string).trim(),
   };
   if (
@@ -47,6 +53,8 @@ function applyUpdate(teams: Team[], payload: UpdatePayload): Team | null {
   team.team_name = payload.team_name;
   team.member_one = payload.member_one;
   team.member_two = payload.member_two;
+  team.member_one_paid = payload.member_one_paid;
+  team.member_two_paid = payload.member_two_paid;
   team.last_year_result = payload.last_year_result;
   return team;
 }

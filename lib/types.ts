@@ -22,8 +22,12 @@ export interface Team {
   team_name: string;
   member_one: string;
   member_two: string;
+  member_one_paid: boolean;
+  member_two_paid: boolean;
   last_year_result: string;
 }
+
+export const PAYMENT_DEADLINE = "Scadenza pagamento: 14 agosto";
 
 export const AUCTION_INFO: Record<Group, string> = {
   A: "Asta: 22 agosto mattina",

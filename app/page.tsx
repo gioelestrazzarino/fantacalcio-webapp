@@ -1,7 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { readTeams } from "@/lib/teams";
-import { AUCTION_INFO, GROUPS, countMembers } from "@/lib/types";
+import {
+  AUCTION_INFO,
+  GROUPS,
+  PAYMENT_DEADLINE,
+  countMembers,
+} from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
@@ -25,6 +30,9 @@ export default async function Home() {
         </h1>
         <p className="rounded-full border border-gold-muted bg-bg-card px-5 py-2 text-lg font-semibold">
           Iscritti: <span className="text-gold-bright">{total}/64</span>
+        </p>
+        <p className="text-base font-semibold text-gold-bright">
+          ⏰ {PAYMENT_DEADLINE}
         </p>
       </section>
 

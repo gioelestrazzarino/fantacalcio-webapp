@@ -9,6 +9,8 @@ export default function EditRow({ team }: { team: Team }) {
   const [teamName, setTeamName] = useState(team.team_name);
   const [memberOne, setMemberOne] = useState(team.member_one);
   const [memberTwo, setMemberTwo] = useState(team.member_two);
+  const [memberOnePaid, setMemberOnePaid] = useState(team.member_one_paid);
+  const [memberTwoPaid, setMemberTwoPaid] = useState(team.member_two_paid);
   const [result, setResult] = useState(team.last_year_result);
   const [state, setState] = useState<SaveState>("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -25,6 +27,8 @@ export default function EditRow({ team }: { team: Team }) {
           team_name: teamName,
           member_one: memberOne,
           member_two: memberTwo,
+          member_one_paid: memberOnePaid,
+          member_two_paid: memberTwoPaid,
           last_year_result: result,
         }),
       });
@@ -80,30 +84,56 @@ export default function EditRow({ team }: { team: Team }) {
             ))}
           </select>
         </label>
-        <label className="flex flex-col gap-1">
-          <span className="text-xs uppercase tracking-wide text-text-secondary">
-            Membro 1
-          </span>
-          <input
-            type="text"
-            value={memberOne}
-            onChange={(e) => setMemberOne(e.target.value)}
-            maxLength={60}
-            className={inputClass}
-          />
-        </label>
-        <label className="flex flex-col gap-1">
-          <span className="text-xs uppercase tracking-wide text-text-secondary">
-            Membro 2
-          </span>
-          <input
-            type="text"
-            value={memberTwo}
-            onChange={(e) => setMemberTwo(e.target.value)}
-            maxLength={60}
-            className={inputClass}
-          />
-        </label>
+        <div className="flex flex-col gap-1">
+          <label className="flex flex-col gap-1">
+            <span className="text-xs uppercase tracking-wide text-text-secondary">
+              Membro 1
+            </span>
+            <input
+              type="text"
+              value={memberOne}
+              onChange={(e) => setMemberOne(e.target.value)}
+              maxLength={60}
+              className={inputClass}
+            />
+          </label>
+          <label className="mt-1 flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={memberOnePaid}
+              onChange={(e) => setMemberOnePaid(e.target.checked)}
+              className="h-4 w-4 accent-[var(--slot-full)]"
+            />
+            <span className={memberOnePaid ? "text-slot-full" : "text-text-secondary"}>
+              Pagato
+            </span>
+          </label>
+        </div>
+        <div className="flex flex-col gap-1">
+          <label className="flex flex-col gap-1">
+            <span className="text-xs uppercase tracking-wide text-text-secondary">
+              Membro 2
+            </span>
+            <input
+              type="text"
+              value={memberTwo}
+              onChange={(e) => setMemberTwo(e.target.value)}
+              maxLength={60}
+              className={inputClass}
+            />
+          </label>
+          <label className="mt-1 flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={memberTwoPaid}
+              onChange={(e) => setMemberTwoPaid(e.target.checked)}
+              className="h-4 w-4 accent-[var(--slot-full)]"
+            />
+            <span className={memberTwoPaid ? "text-slot-full" : "text-text-secondary"}>
+              Pagato
+            </span>
+          </label>
+        </div>
       </div>
       <div className="mt-3 flex items-center gap-3">
         <button
