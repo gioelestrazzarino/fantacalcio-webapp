@@ -3,12 +3,12 @@
     "id": "a-1",
     "group": "A",
     "slot_number": 1,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
-    "member_one_paid": false,
-    "member_two_paid": false
+    "team_name": "Athletic Diao",
+    "member_one": "Sebastiano Botta",
+    "member_two": "Tommaso Dotta",
+    "last_year_result": "8th GS",
+    "member_one_paid": true,
+    "member_two_paid": true
   },
   {
     "id": "a-2",
