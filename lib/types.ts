@@ -28,6 +28,10 @@ export interface Team {
 }
 
 export const PAYMENT_DEADLINE = "Scadenza pagamento: 14 agosto";
+export const FEE_PER_PERSON = 20;
+export const TOTAL_PARTICIPANTS = 64;
+// Inizio asta: 22 agosto 2026, ore 8:00 (Europe/Rome, CEST = UTC+2)
+export const AUCTION_START_ISO = "2026-08-22T08:00:00+02:00";
 
 export const AUCTION_INFO: Record<Group, string> = {
   A: "Asta: 22 agosto mattina",
@@ -40,6 +44,13 @@ export function countMembers(teams: Team[]): number {
   return teams.reduce(
     (acc, t) =>
       acc + (t.member_one.trim() ? 1 : 0) + (t.member_two.trim() ? 1 : 0),
+    0
+  );
+}
+
+export function countPaid(teams: Team[]): number {
+  return teams.reduce(
+    (acc, t) => acc + (t.member_one_paid ? 1 : 0) + (t.member_two_paid ? 1 : 0),
     0
   );
 }

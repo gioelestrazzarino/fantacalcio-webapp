@@ -1,18 +1,26 @@
 import Link from "next/link";
 import Image from "next/image";
 import { readTeams } from "@/lib/teams";
+import AuctionCountdown from "@/components/AuctionCountdown";
 import {
   AUCTION_INFO,
+  FEE_PER_PERSON,
   GROUPS,
   PAYMENT_DEADLINE,
+  TOTAL_PARTICIPANTS,
   countMembers,
+  countPaid,
 } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
+const euro = new Intl.NumberFormat("it-IT", { useGrouping: "always" });
+
 export default async function Home() {
   const teams = await readTeams();
   const total = countMembers(teams);
+  const collected = countPaid(teams) * FEE_PER_PERSON;
+  const prizePool = TOTAL_PARTICIPANTS * FEE_PER_PERSON;
 
   return (
     <div className="flex flex-col gap-8">
@@ -34,7 +42,14 @@ export default async function Home() {
         <p className="text-base font-semibold text-gold-bright">
           ⏰ {PAYMENT_DEADLINE}
         </p>
+        <p className="text-sm font-semibold text-text-secondary">
+          Montepremi raccolto:{" "}
+          <span className="text-gold">{euro.format(collected)}€</span> /{" "}
+          {euro.format(prizePool)}€
+        </p>
       </section>
+
+      <AuctionCountdown />
 
       <section className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {GROUPS.map((group) => {
