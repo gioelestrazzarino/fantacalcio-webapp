@@ -156,8 +156,8 @@
     "id": "b-6",
     "group": "B",
     "slot_number": 6,
-    "member_one": "",
-    "member_two": "",
+    "member_one": "Giacomo Castello",
+    "member_two": "Alessandro Fracchia",
     "member_one_paid": false,
     "member_two_paid": false
   },
