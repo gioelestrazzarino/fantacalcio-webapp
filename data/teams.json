@@ -147,8 +147,8 @@
     "id": "b-5",
     "group": "B",
     "slot_number": 5,
-    "member_one": "",
-    "member_two": "",
+    "member_one": "Matteo Silvestro",
+    "member_two": "Andrea Maggio",
     "member_one_paid": false,
     "member_two_paid": false
   },
