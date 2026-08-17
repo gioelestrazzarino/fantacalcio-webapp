@@ -5,30 +5,14 @@ export const SLOTS_PER_GROUP = 12;
 export const MEMBERS_PER_GROUP = SLOTS_PER_GROUP * 2; // 24
 export const TOTAL_MEMBERS = GROUPS.length * MEMBERS_PER_GROUP; // 48
 
-export const LAST_YEAR_RESULTS = [
-  "NA",
-  "10th GS",
-  "9th GS",
-  "8th GS",
-  "R16",
-  "QF",
-  "4th",
-  "3rd",
-  "2nd",
-  "1st",
-] as const;
-export type LastYearResult = (typeof LAST_YEAR_RESULTS)[number];
-
 export interface Team {
   id: string;
   group: Group;
   slot_number: number;
-  team_name: string;
   member_one: string;
   member_two: string;
   member_one_paid: boolean;
   member_two_paid: boolean;
-  last_year_result: string;
 }
 
 export const PAYMENT_DEADLINE = "Scadenza pagamento: 14 agosto";

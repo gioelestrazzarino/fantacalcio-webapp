@@ -1,17 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { LAST_YEAR_RESULTS, type Team } from "@/lib/types";
+import { type Team } from "@/lib/types";
 
 type SaveState = "idle" | "saving" | "saved" | "error";
 
 export default function EditRow({ team }: { team: Team }) {
-  const [teamName, setTeamName] = useState(team.team_name);
   const [memberOne, setMemberOne] = useState(team.member_one);
   const [memberTwo, setMemberTwo] = useState(team.member_two);
   const [memberOnePaid, setMemberOnePaid] = useState(team.member_one_paid);
   const [memberTwoPaid, setMemberTwoPaid] = useState(team.member_two_paid);
-  const [result, setResult] = useState(team.last_year_result);
   const [state, setState] = useState<SaveState>("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
@@ -24,12 +22,10 @@ export default function EditRow({ team }: { team: Team }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           id: team.id,
-          team_name: teamName,
           member_one: memberOne,
           member_two: memberTwo,
           member_one_paid: memberOnePaid,
           member_two_paid: memberTwoPaid,
-          last_year_result: result,
         }),
       });
       if (res.ok) {
@@ -55,35 +51,6 @@ export default function EditRow({ team }: { team: Team }) {
         Slot {team.slot_number}
       </p>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        <label className="flex flex-col gap-1">
-          <span className="text-xs uppercase tracking-wide text-text-secondary">
-            Nome squadra
-          </span>
-          <input
-            type="text"
-            value={teamName}
-            onChange={(e) => setTeamName(e.target.value)}
-            maxLength={60}
-            className={inputClass}
-          />
-        </label>
-        <label className="flex flex-col gap-1">
-          <span className="text-xs uppercase tracking-wide text-text-secondary">
-            Risultato anno scorso
-          </span>
-          <select
-            value={result}
-            onChange={(e) => setResult(e.target.value)}
-            className={inputClass}
-          >
-            <option value="">-</option>
-            {LAST_YEAR_RESULTS.map((r) => (
-              <option key={r} value={r}>
-                {r}
-              </option>
-            ))}
-          </select>
-        </label>
         <div className="flex flex-col gap-1">
           <label className="flex flex-col gap-1">
             <span className="text-xs uppercase tracking-wide text-text-secondary">

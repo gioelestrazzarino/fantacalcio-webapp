@@ -96,48 +96,25 @@ export default async function GironePage({
       </div>
 
       <ul className="flex flex-col gap-3">
-        {teams.map((team) => {
-          const filled =
-            team.member_one.trim() !== "" || team.member_two.trim() !== "";
-          return (
-            <li
-              key={team.id}
-              className="rounded-2xl border border-border-base bg-bg-card p-4"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <div className="flex min-w-0 items-start gap-2">
-                  <span
-                    className={`mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full ${
-                      filled ? "bg-slot-full" : "bg-slot-empty"
-                    }`}
-                    aria-hidden
-                  />
-                  <p className="break-words text-lg font-bold text-text-primary">
-                    {display(team.team_name)}
-                  </p>
-                </div>
-                <span className="shrink-0 rounded-md border border-border-base px-2 py-0.5 text-xs font-semibold text-gold-muted">
-                  <span className="font-normal text-text-secondary">
-                    Scorsa stagione:{" "}
-                  </span>
-                  {display(team.last_year_result)}
-                </span>
-              </div>
-              <div className="mt-3 grid grid-cols-2 gap-x-3 gap-y-1 text-sm">
-                <MemberCell
-                  label="Membro 1"
-                  name={team.member_one}
-                  paid={team.member_one_paid}
-                />
-                <MemberCell
-                  label="Membro 2"
-                  name={team.member_two}
-                  paid={team.member_two_paid}
-                />
-              </div>
-            </li>
-          );
-        })}
+        {teams.map((team) => (
+          <li
+            key={team.id}
+            className="rounded-2xl border border-border-base bg-bg-card p-4"
+          >
+            <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-sm">
+              <MemberCell
+                label="Membro 1"
+                name={team.member_one}
+                paid={team.member_one_paid}
+              />
+              <MemberCell
+                label="Membro 2"
+                name={team.member_two}
+                paid={team.member_two_paid}
+              />
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
   );
