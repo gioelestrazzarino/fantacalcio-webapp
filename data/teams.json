@@ -138,9 +138,9 @@
     "id": "b-4",
     "group": "B",
     "slot_number": 4,
-    "member_one": "",
-    "member_two": "",
-    "member_one_paid": false,
+    "member_one": "Jacopo Roascio",
+    "member_two": "Erkyehun Pizzorno",
+    "member_one_paid": true,
     "member_two_paid": false
   },
   {
