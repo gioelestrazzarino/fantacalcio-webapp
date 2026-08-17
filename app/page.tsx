@@ -6,8 +6,9 @@ import {
   AUCTION_INFO,
   FEE_PER_PERSON,
   GROUPS,
+  MEMBERS_PER_GROUP,
   PAYMENT_DEADLINE,
-  TOTAL_PARTICIPANTS,
+  TOTAL_MEMBERS,
   countMembers,
   countPaid,
 } from "@/lib/types";
@@ -20,7 +21,6 @@ export default async function Home() {
   const teams = await readTeams();
   const total = countMembers(teams);
   const collected = countPaid(teams) * FEE_PER_PERSON;
-  const prizePool = TOTAL_PARTICIPANTS * FEE_PER_PERSON;
 
   return (
     <div className="flex flex-col gap-8">
@@ -37,15 +37,17 @@ export default async function Home() {
           Fantacalcio 2026-2027 🔥⚽️
         </h1>
         <p className="rounded-full border border-gold-muted bg-bg-card px-5 py-2 text-lg font-semibold">
-          Iscritti: <span className="text-gold-bright">{total}/64</span>
+          Iscritti:{" "}
+          <span className="text-gold-bright">
+            {total}/{TOTAL_MEMBERS}
+          </span>
         </p>
         <p className="text-base font-semibold text-gold-bright">
           ⏰ {PAYMENT_DEADLINE}
         </p>
         <p className="text-sm font-semibold text-text-secondary">
           Montepremi raccolto:{" "}
-          <span className="text-gold">{euro.format(collected)}€</span> /{" "}
-          {euro.format(prizePool)}€
+          <span className="text-gold">{euro.format(collected)}€</span>
         </p>
       </section>
 
@@ -64,10 +66,12 @@ export default async function Home() {
                 <h2 className="text-xl font-bold text-gold">Girone {group}</h2>
                 <span
                   className={`text-lg font-semibold ${
-                    count === 16 ? "text-slot-full" : "text-text-primary"
+                    count === MEMBERS_PER_GROUP
+                      ? "text-slot-full"
+                      : "text-text-primary"
                   }`}
                 >
-                  {count}/16
+                  {count}/{MEMBERS_PER_GROUP}
                 </span>
               </div>
               <p className="text-sm text-text-secondary">

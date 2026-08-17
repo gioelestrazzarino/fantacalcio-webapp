@@ -1,7 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { readTeams } from "@/lib/teams";
-import { AUCTION_INFO, GROUPS, countMembers, type Group } from "@/lib/types";
+import {
+  AUCTION_INFO,
+  GROUPS,
+  MEMBERS_PER_GROUP,
+  countMembers,
+  type Group,
+} from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
@@ -70,8 +76,10 @@ export default async function GironePage({
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h1 className="text-2xl font-extrabold text-gold">Girone {group}</h1>
         <span className="text-lg font-semibold">
-          <span className={count === 16 ? "text-slot-full" : ""}>{count}</span>
-          /16 giocatori
+          <span className={count === MEMBERS_PER_GROUP ? "text-slot-full" : ""}>
+            {count}
+          </span>
+          /{MEMBERS_PER_GROUP} giocatori
         </span>
       </div>
       <p className="-mt-3 text-sm text-text-secondary">{AUCTION_INFO[group]}</p>

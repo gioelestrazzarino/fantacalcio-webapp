@@ -6,9 +6,9 @@
     "team_name": "Athletic Diao",
     "member_one": "Sebastiano Botta",
     "member_two": "Tommaso Dotta",
-    "last_year_result": "8th GS",
     "member_one_paid": true,
-    "member_two_paid": true
+    "member_two_paid": true,
+    "last_year_result": "8th GS"
   },
   {
     "id": "a-2",
@@ -17,9 +17,9 @@
     "team_name": "odio i terroni",
     "member_one": "Alberto Giordano",
     "member_two": "Riccardo Bressan",
-    "last_year_result": "10th GS",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": "10th GS"
   },
   {
     "id": "a-3",
@@ -28,119 +28,163 @@
     "team_name": "dilloconunaD",
     "member_one": "Zaccaria Castellano",
     "member_two": "Simone Bausano",
-    "last_year_result": "9th GS",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": "9th GS"
   },
   {
     "id": "a-4",
     "group": "A",
     "slot_number": 4,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
+    "team_name": "ASD IO PORCO",
+    "member_one": "Nicola Coratella",
+    "member_two": "Diego Leoncini",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": "R16"
   },
   {
     "id": "a-5",
     "group": "A",
     "slot_number": 5,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
+    "team_name": "Scialla Semper",
+    "member_one": "Alessandro Ferrini",
+    "member_two": "Claudio Pontin",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": true,
+    "last_year_result": "10th GS"
   },
   {
     "id": "a-6",
     "group": "A",
     "slot_number": 6,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
+    "team_name": "Chessea",
+    "member_one": "Riccardo Lapponi",
+    "member_two": "Gioele Strazzarino",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": true,
+    "last_year_result": "1st"
   },
   {
     "id": "a-7",
     "group": "A",
     "slot_number": 7,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
+    "team_name": "NA",
+    "member_one": "Davide Scaglia",
+    "member_two": "Samuele Turco",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": "NA"
   },
   {
     "id": "a-8",
     "group": "A",
     "slot_number": 8,
+    "team_name": "Joga Benito",
+    "member_one": "Andrea Servetto",
+    "member_two": "Nicolò Prando",
+    "member_one_paid": false,
+    "member_two_paid": false,
+    "last_year_result": "4th"
+  },
+  {
+    "id": "a-9",
+    "group": "A",
+    "slot_number": 9,
     "team_name": "",
     "member_one": "",
     "member_two": "",
-    "last_year_result": "",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": ""
+  },
+  {
+    "id": "a-10",
+    "group": "A",
+    "slot_number": 10,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "member_one_paid": false,
+    "member_two_paid": false,
+    "last_year_result": ""
+  },
+  {
+    "id": "a-11",
+    "group": "A",
+    "slot_number": 11,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "member_one_paid": false,
+    "member_two_paid": false,
+    "last_year_result": ""
+  },
+  {
+    "id": "a-12",
+    "group": "A",
+    "slot_number": 12,
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
+    "member_one_paid": false,
+    "member_two_paid": false,
+    "last_year_result": ""
   },
   {
     "id": "b-1",
     "group": "B",
     "slot_number": 1,
-    "team_name": "ASD IO PORCO",
-    "member_one": "Nicola Coratella",
-    "member_two": "Diego Leoncini",
-    "last_year_result": "R16",
+    "team_name": "Diddy FC",
+    "member_one": "Matteo Matarazzo",
+    "member_two": "Francesco Taretto",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": "NA"
   },
   {
     "id": "b-2",
     "group": "B",
     "slot_number": 2,
-    "team_name": "Scialla Semper",
-    "member_one": "Alessandro Ferrini",
-    "member_two": "Claudio Pontin",
-    "last_year_result": "10th GS",
+    "team_name": "Milfall United",
+    "member_one": "Matteo Grenno",
+    "member_two": "Francesco Montano",
     "member_one_paid": false,
-    "member_two_paid": true
+    "member_two_paid": false,
+    "last_year_result": "2nd"
   },
   {
     "id": "b-3",
     "group": "B",
     "slot_number": 3,
-    "team_name": "Chessea",
-    "member_one": "Riccardo Lapponi",
-    "member_two": "Gioele Strazzarino",
-    "last_year_result": "1st",
+    "team_name": "Al-DoMoro",
+    "member_one": "Enrico Bussetti",
+    "member_two": "Davide Franchelli",
     "member_one_paid": false,
-    "member_two_paid": true
+    "member_two_paid": false,
+    "last_year_result": "R16"
   },
   {
     "id": "b-4",
     "group": "B",
     "slot_number": 4,
-    "team_name": "NA",
-    "member_one": "Davide Scaglia",
-    "member_two": "Samuele Turco",
-    "last_year_result": "NA",
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": ""
   },
   {
     "id": "b-5",
     "group": "B",
     "slot_number": 5,
-    "team_name": "Joga Benito",
-    "member_one": "Andrea Servetto",
-    "member_two": "Nicolò Prando",
-    "last_year_result": "4th",
+    "team_name": "",
+    "member_one": "",
+    "member_two": "",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": ""
   },
   {
     "id": "b-6",
@@ -149,9 +193,9 @@
     "team_name": "",
     "member_one": "",
     "member_two": "",
-    "last_year_result": "",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": ""
   },
   {
     "id": "b-7",
@@ -160,9 +204,9 @@
     "team_name": "",
     "member_one": "",
     "member_two": "",
-    "last_year_result": "",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": ""
   },
   {
     "id": "b-8",
@@ -171,184 +215,52 @@
     "team_name": "",
     "member_one": "",
     "member_two": "",
-    "last_year_result": "",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": ""
   },
   {
-    "id": "c-1",
-    "group": "C",
-    "slot_number": 1,
-    "team_name": "Diddy FC",
-    "member_one": "Matteo Matarazzo",
-    "member_two": "Francesco Taretto",
-    "last_year_result": "NA",
-    "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "c-2",
-    "group": "C",
-    "slot_number": 2,
-    "team_name": "Milfall United",
-    "member_one": "Matteo Grenno",
-    "member_two": "Francesco Montano",
-    "last_year_result": "2nd",
-    "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "c-3",
-    "group": "C",
-    "slot_number": 3,
+    "id": "b-9",
+    "group": "B",
+    "slot_number": 9,
     "team_name": "",
     "member_one": "",
     "member_two": "",
-    "last_year_result": "",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": ""
   },
   {
-    "id": "c-4",
-    "group": "C",
-    "slot_number": 4,
-    "team_name": "Al-DoMoro",
-    "member_one": "Enrico Bussetti",
-    "member_two": "Davide Franchelli",
-    "last_year_result": "R16",
-    "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "c-5",
-    "group": "C",
-    "slot_number": 5,
+    "id": "b-10",
+    "group": "B",
+    "slot_number": 10,
     "team_name": "",
     "member_one": "",
     "member_two": "",
-    "last_year_result": "",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": ""
   },
   {
-    "id": "c-6",
-    "group": "C",
-    "slot_number": 6,
+    "id": "b-11",
+    "group": "B",
+    "slot_number": 11,
     "team_name": "",
     "member_one": "",
     "member_two": "",
-    "last_year_result": "",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": ""
   },
   {
-    "id": "c-7",
-    "group": "C",
-    "slot_number": 7,
+    "id": "b-12",
+    "group": "B",
+    "slot_number": 12,
     "team_name": "",
     "member_one": "",
     "member_two": "",
-    "last_year_result": "",
     "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "c-8",
-    "group": "C",
-    "slot_number": 8,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
-    "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "d-1",
-    "group": "D",
-    "slot_number": 1,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
-    "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "d-2",
-    "group": "D",
-    "slot_number": 2,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
-    "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "d-3",
-    "group": "D",
-    "slot_number": 3,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
-    "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "d-4",
-    "group": "D",
-    "slot_number": 4,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
-    "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "d-5",
-    "group": "D",
-    "slot_number": 5,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
-    "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "d-6",
-    "group": "D",
-    "slot_number": 6,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
-    "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "d-7",
-    "group": "D",
-    "slot_number": 7,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
-    "member_one_paid": false,
-    "member_two_paid": false
-  },
-  {
-    "id": "d-8",
-    "group": "D",
-    "slot_number": 8,
-    "team_name": "",
-    "member_one": "",
-    "member_two": "",
-    "last_year_result": "",
-    "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": false,
+    "last_year_result": ""
   }
 ]

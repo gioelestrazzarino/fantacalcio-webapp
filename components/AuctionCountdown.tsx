@@ -55,7 +55,7 @@ export default function AuctionCountdown() {
                 )}, ${plural(time.minutes, "minuto", "minuti")}`}
           </p>
           <p className="text-xs text-text-secondary">
-            22 agosto 2026, ore 8:00
+            sabato 22 agosto 2026, ore 10:00
           </p>
         </>
       )}

@@ -1,5 +1,9 @@
-export const GROUPS = ["A", "B", "C", "D"] as const;
+export const GROUPS = ["A", "B"] as const;
 export type Group = (typeof GROUPS)[number];
+
+export const SLOTS_PER_GROUP = 12;
+export const MEMBERS_PER_GROUP = SLOTS_PER_GROUP * 2; // 24
+export const TOTAL_MEMBERS = GROUPS.length * MEMBERS_PER_GROUP; // 48
 
 export const LAST_YEAR_RESULTS = [
   "NA",
@@ -29,15 +33,12 @@ export interface Team {
 
 export const PAYMENT_DEADLINE = "Scadenza pagamento: 14 agosto";
 export const FEE_PER_PERSON = 20;
-export const TOTAL_PARTICIPANTS = 64;
-// Inizio asta: 22 agosto 2026, ore 8:00 (Europe/Rome, CEST = UTC+2)
-export const AUCTION_START_ISO = "2026-08-22T08:00:00+02:00";
+// Inizio asta: sabato 22 agosto 2026, ore 10:00 (Europe/Rome, CEST = UTC+2)
+export const AUCTION_START_ISO = "2026-08-22T10:00:00+02:00";
 
 export const AUCTION_INFO: Record<Group, string> = {
-  A: "Asta: 22 agosto mattina",
-  B: "Asta: 22 agosto pomeriggio",
-  C: "Asta: 23 agosto mattina",
-  D: "Asta: 23 agosto pomeriggio",
+  A: "Asta: sabato 22 agosto, ore 10:00",
+  B: "Asta: domenica 23 agosto, ore 10:00",
 };
 
 export function countMembers(teams: Team[]): number {
