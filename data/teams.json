@@ -192,8 +192,8 @@
     "id": "b-10",
     "group": "B",
     "slot_number": 10,
-    "member_one": "",
-    "member_two": "",
+    "member_one": "Emanuele Ghiso",
+    "member_two": "Dennis Bobeica",
     "member_one_paid": false,
     "member_two_paid": false
   },
