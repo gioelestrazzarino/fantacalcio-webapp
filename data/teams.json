@@ -84,8 +84,8 @@
     "id": "a-10",
     "group": "A",
     "slot_number": 10,
-    "member_one": "",
-    "member_two": "",
+    "member_one": "Francesco Olivieri",
+    "member_two": "Giovanni Lo Piccolo",
     "member_one_paid": false,
     "member_two_paid": false
   },
