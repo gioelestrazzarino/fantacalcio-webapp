@@ -123,7 +123,7 @@
     "member_one": "Matteo Grenno",
     "member_two": "Francesco Montano",
     "member_one_paid": false,
-    "member_two_paid": true
+    "member_two_paid": false
   },
   {
     "id": "b-3",
