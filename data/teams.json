@@ -194,7 +194,7 @@
     "slot_number": 10,
     "member_one": "Emanuele Ghiso",
     "member_two": "Dennis Bobeica",
-    "member_one_paid": false,
+    "member_one_paid": true,
     "member_two_paid": false
   },
   {
