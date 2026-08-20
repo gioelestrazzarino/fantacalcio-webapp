@@ -159,7 +159,7 @@
     "member_one": "Giacomo Castello",
     "member_two": "Alessandro Fracchia",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": true
   },
   {
     "id": "b-7",
