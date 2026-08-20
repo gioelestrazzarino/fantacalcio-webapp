@@ -14,8 +14,8 @@
     "slot_number": 2,
     "member_one": "Alberto Giordano",
     "member_two": "Riccardo Bressan",
-    "member_one_paid": false,
-    "member_two_paid": false
+    "member_one_paid": true,
+    "member_two_paid": true
   },
   {
     "id": "a-3",
