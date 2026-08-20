@@ -50,7 +50,7 @@
     "slot_number": 6,
     "member_one": "Riccardo Lapponi",
     "member_two": "Gioele Strazzarino",
-    "member_one_paid": false,
+    "member_one_paid": true,
     "member_two_paid": true
   },
   {
