@@ -32,7 +32,7 @@
     "slot_number": 4,
     "member_one": "Nicola Coratella",
     "member_two": "Diego Leoncini",
-    "member_one_paid": false,
+    "member_one_paid": true,
     "member_two_paid": false
   },
   {
