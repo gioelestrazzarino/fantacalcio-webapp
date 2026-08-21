@@ -113,8 +113,8 @@
     "slot_number": 1,
     "member_one": "Matteo Matarazzo",
     "member_two": "Francesco Taretto",
-    "member_one_paid": false,
-    "member_two_paid": false
+    "member_one_paid": true,
+    "member_two_paid": true
   },
   {
     "id": "b-2",
