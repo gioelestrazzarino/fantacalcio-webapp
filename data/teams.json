@@ -69,7 +69,7 @@
     "member_one": "Andrea Servetto",
     "member_two": "Nicolò Prando",
     "member_one_paid": false,
-    "member_two_paid": false
+    "member_two_paid": true
   },
   {
     "id": "a-9",
