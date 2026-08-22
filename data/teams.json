@@ -33,7 +33,7 @@
     "member_one": "Nicola Coratella",
     "member_two": "Diego Leoncini",
     "member_one_paid": true,
-    "member_two_paid": false
+    "member_two_paid": true
   },
   {
     "id": "a-5",
